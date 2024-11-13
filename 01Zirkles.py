@@ -12,13 +12,12 @@ winConditions = {
     'z': 'p'
 }
 
-# keys = names.keys
-keys = ['a','p','z']
+keys = list(names.keys())
 
 playerVal = ''
 
 while playerVal != 'n' and (not (playerVal in keys)):
-    playerVal = input('[a]kmuo, [p]opierius, [z]irkles, [n]ebežaidžiam?...')
+    playerVal = input('[a]kmuo, [p]opierius, [z]irkles, [n]ebežaidžiam?...').lower()
     if playerVal == 'n':
         print('viso gero')
         break
